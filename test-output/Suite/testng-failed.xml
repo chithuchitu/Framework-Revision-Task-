@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <exclude name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="org.testngrevision.FacebookTestNG">
+        <methods>
+          <include name="clickLogin"/>
+          <include name="goBackToPreviousPage"/>
+          <include name="createAccount"/>
+          <include name="checkLogin"/>
+        </methods>
+      </class> <!-- org.testngrevision.FacebookTestNG -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
